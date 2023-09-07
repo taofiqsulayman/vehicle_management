@@ -1,24 +1,63 @@
-# README
+# Vehicle Management Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
 
-Things you may want to cover:
+Make sure you have the following software installed on your machine:
 
-* Ruby version
+- Ruby (version X.X.X)
+- Ruby on Rails (version X.X.X)
+- Bundler
+- PostgreSQL
+- NodeJS
 
-* System dependencies
+## Project setup
+Clone this repo to your local machine
 
-* Configuration
+cd into project directory and check your ruby version:
 
-* Database creation
+```
+ruby -v
+```
 
-* Database initialization
+### Install the required gems using Bundler:
+Using Bundle
 
-* How to run the test suite
+``` bundle install ```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+### Set up the PostgreSQL database:
 
-* ...
+```
+rails db:create
+rails db:migrate
+```
+
+### Start the Rails server:
+
+```
+rails server
+```
+
+### start the react project
+
+```
+cd vehicle_management_frontend
+```
+
+### install the dependencies and start the application
+
+```
+npm install && npm start
+```
+
+access your react app at http://localhost:3001
+
+### Additional Configuration
+
+Modify the database configuration in config/database.yml to match your PostgreSQL credentials.
+
+### Customize configuration
+See [Configuration Reference](https://guides.rubyonrails.org/).
+
+## Credits
+- Taofiq Sulayman [Sulaymantaofiq@gmail.com](mailto:sulaymantaofiq@gmail.com)
